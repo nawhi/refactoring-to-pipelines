@@ -1,2 +1,2 @@
 require: ts-node/register
-spec: src/**/*.test.ts
+spec: src/exercises/*.ts
