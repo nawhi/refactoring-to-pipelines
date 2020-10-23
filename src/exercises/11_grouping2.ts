@@ -43,8 +43,7 @@ describe("Exercise 11 - Grouping 2", () => {
   });
 });
 
-// just a utility function
-// no need to refactor but you will want to use it
+// utility function - no need to refactor but can use it
 function smallestDivisor(n: number): number {
   if (n < 2) throw new RangeError();
 
