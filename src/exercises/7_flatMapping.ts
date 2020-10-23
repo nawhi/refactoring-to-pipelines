@@ -1,5 +1,6 @@
 import { expect } from "chai";
 
+// refactor me to be more functional
 function series(max: number): number[] {
   const numbers: number[] = [];
   for (let i = 1; i <= max; i++) {

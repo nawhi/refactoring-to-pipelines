@@ -1,21 +1,17 @@
 import { expect } from "chai";
 
 // refactor me to be more functional
-function mapToUrl(strings: string[]): URL[] {
+function softMapToURL(strings: string[]): URL[] {
   const uris: URL[] = [];
   for (const string of strings) {
     try {
       uris.push(new URL(string));
-    } catch (e) {
-      throw new CustomError(`Failed to map "${string}" to URL`);
-    }
+    } catch (e) {}
   }
   return uris;
 }
 
-class CustomError extends Error {}
-
-describe("Exercise 8 - Abort on Error", () => {
+describe("Exercise 9 - Ignore Errors", () => {
   it("good urls pass", () => {
     const goodUris = [
       "http://example.com/example_a",
@@ -23,20 +19,23 @@ describe("Exercise 8 - Abort on Error", () => {
       "http://example.com/example_c",
     ];
 
-    expect(mapToUrl(goodUris)).to.eql([
+    expect(softMapToURL(goodUris)).to.eql([
       new URL("http://example.com/example_a"),
       new URL("http://example.com/example_b"),
       new URL("http://example.com/example_c"),
     ]);
   });
 
-  it("errors are caught and rethrown", () => {
+  it("bad urls are ignored", () => {
     const badUris = [
       "http://example.com/good",
       "example.com/bad",
       "http://example.com/good2",
     ];
 
-    expect(() => mapToUrl(badUris)).to.throw(CustomError);
+    expect(softMapToURL(badUris)).to.eql([
+      new URL("http://example.com/good"),
+      new URL("http://example.com/good2"),
+    ]);
   });
 });
