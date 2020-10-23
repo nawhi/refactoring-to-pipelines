@@ -43,15 +43,16 @@ describe("Exercise 11 - Grouping 2", () => {
   });
 });
 
-// utility function - no need to refactor but can use it
+// utility function - no need to refactor this
 function smallestDivisor(n: number): number {
-  if (n < 2) throw new RangeError();
+  if (n < 2) {
+    throw new RangeError();
+  }
 
-  const sqrt_n = Math.floor(Math.sqrt(n));
-  let k: number = 2;
-  while (k <= sqrt_n) {
-    if (n % k == 0) return k;
-    k++;
+  for (let k = 2; k <= Math.floor(Math.sqrt(n)); k++) {
+    if (n % k == 0) {
+      return k;
+    }
   }
   return n;
 }
