@@ -9,7 +9,7 @@ function mapToNumbers(things: string[]): number[] {
   return result;
 }
 
-describe("Exercise 2 - Mapping", () => {
+describe("Mapping", () => {
   it("turns each input into a number", () => {
     expect(mapToNumbers(["2", "3", "5", "7"])).to.eql([2, 3, 5, 7]);
   });

@@ -11,7 +11,7 @@ function softMapToURL(strings: string[]): URL[] {
   return uris;
 }
 
-describe("Exercise 9 - Ignore Errors", () => {
+describe("Ignore Errors", () => {
   it("good urls pass", () => {
     const goodUris = [
       "http://example.com/example_a",

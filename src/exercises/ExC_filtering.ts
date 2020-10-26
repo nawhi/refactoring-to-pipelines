@@ -11,7 +11,7 @@ function removeOddNumbers(numbers: number[]): number[] {
   return result;
 }
 
-describe("Exercise 3 - Filtering", () => {
+describe("Filtering", () => {
   it("filters out odd numbers", () => {
     expect(removeOddNumbers([1, 2, 3, 4, 5, 6, 7, 8])).to.eql([2, 4, 6, 8]);
   });

@@ -21,7 +21,7 @@ function separateMillenials(people: Person[]): [Person[], Person[]] {
   return [millenials, others];
 }
 
-describe("Exercise 13 - Partition", () => {
+describe("Partition", () => {
   it("separates millennials", () => {
     const channing = {
       name: "Channing",

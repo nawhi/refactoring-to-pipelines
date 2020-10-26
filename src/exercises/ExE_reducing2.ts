@@ -19,7 +19,7 @@ function getTotalExpenses(transactions: Transaction[]): number {
   return result;
 }
 
-describe("Exercise 6 - Reducing part 2", () => {
+describe("Reducing part 2", () => {
   it("sums all expenses excluding refunds", () => {
     const transactions: Transaction[] = [
       {

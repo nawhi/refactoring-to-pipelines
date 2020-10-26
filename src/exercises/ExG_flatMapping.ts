@@ -12,7 +12,7 @@ function series(max: number): number[] {
 }
 
 // prettier-ignore
-describe("Exercise 7 - Flat Mapping", () => {
+describe("Flat Mapping", () => {
   it("counts to one", () => {
     expect(series(1)).to.eql([1]);
   });

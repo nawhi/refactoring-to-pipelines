@@ -9,7 +9,7 @@ function sumRange(limit: number) {
   return result;
 }
 
-describe("Exercise 6 - Summing Range", () => {
+describe("Summing Range", () => {
   it("is 0 for limit 0", () => {
     expect(sumRange(0)).to.eql(0)
   });

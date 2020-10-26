@@ -9,7 +9,7 @@ function sumOfSquares(numbers: number[]): number {
   return result;
 }
 
-describe("Exercise 5 - Reducing", () => {
+describe("Reducing", () => {
   it("sums the squares of the numbers in the array", () => {
     expect(sumOfSquares([1, 2, 3, 4, 5])).to.eql(55);
   });

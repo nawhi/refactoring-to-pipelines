@@ -1,4 +1,4 @@
-describe("Exercise 10 - Flat Mapping Part 2", () => {
+describe("Flat Mapping Part 2", () => {
   it("extracts a list of all companies", () => {
     const directory: Directory = [
       {

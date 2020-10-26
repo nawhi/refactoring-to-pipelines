@@ -15,7 +15,7 @@ function fibonacci(count: number): number[] {
   return result;
 }
 
-describe("Exercise 10 - Generators", () => {
+describe("Generators", () => {
   it("generates the Fibonacci sequence", () => {
     expect(fibonacci(10)).to.eql([1, 2, 3, 5, 8, 13, 21, 34, 55, 89]);
   });

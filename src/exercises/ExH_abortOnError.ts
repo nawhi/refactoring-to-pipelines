@@ -15,7 +15,7 @@ function mapToUrl(strings: string[]): URL[] {
 
 class CustomError extends Error {}
 
-describe("Exercise 8 - Abort on Error", () => {
+describe("Abort on Error", () => {
   it("good urls pass", () => {
     const goodUris = [
       "http://example.com/example_a",

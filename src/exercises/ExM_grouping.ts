@@ -20,7 +20,7 @@ function groupByCategory(products: Product[]): { [category: string]: Product[] }
   return categories;
 }
 
-describe("Exercise 4 - Grouping", () => {
+describe("Grouping", () => {
   const winklePickers: Product = { name: "winkle pickers", category: "shoes" };
   const bovverBoots: Product = { name: "bovver boots", category: "shoes" };
   const fez: Product = { name: "fez", category: "hats" };

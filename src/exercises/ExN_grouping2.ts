@@ -18,7 +18,7 @@ function multiples(max: number): MultipleMap {
   return multiples;
 }
 
-describe("Exercise 11 - Grouping 2", () => {
+describe("Grouping 2", () => {
   it("returns primes and their multiples up to 10", () => {
     expect(multiples(10)).to.eql({
       [2]: [2, 4, 6, 8],

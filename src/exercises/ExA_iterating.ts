@@ -12,7 +12,7 @@ function writeToStream(things: string[], stream: Stream) {
 }
 
 
-describe('Exercise 1 - Iterating', () => {
+describe(' - Iterating', () => {
   it('writes all items in list to the stream', () => {
     const stream = new ConcatStream();
     writeToStream(["one", "two", "three"], stream);

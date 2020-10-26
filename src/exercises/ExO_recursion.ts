@@ -22,7 +22,7 @@ function getPlaylist(playlists: Playlist[]): PlaylistSummary[] {
   return Array.from(summary);
 }
 
-describe("Exercise 15 - Recursion", () => {
+describe("Recursion", () => {
   it("gets all unique playlists and their owner's display name", () => {
     expect(extractAllPlaylists(spotify)).to.eql([
       {
