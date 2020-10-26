@@ -8,7 +8,6 @@ type Person = {
 };
 
 function separateMillenials(people: Person[]): [Person[], Person[]] {
-  return _.partition(people, person => person.birthYear >= 1981 && person.birthYear <= 1996)
   const millenials: Person[] = [],
     others: Person[] = [];
   for (const person of people) {
