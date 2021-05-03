@@ -1,6 +1,6 @@
-# refactoring-to-pipelines
+# Refactoring to Collection Pipelines Exercises
 
-Learn how to express algorithms using collection chaining.
+Learn how to express algorithms using collection pipelines instead of loops.
 
 This is a TypeScript version of [Duncan McGregor](https://github.com/dmcg)'s [refactoring-to-streams](https://github.com/dmcg/refactoring-to-streams), designed to teach Java 8 Streams.
 
