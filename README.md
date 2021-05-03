@@ -1,4 +1,4 @@
-# Refactoring to Collection Pipelines Exercises
+# Collection Pipeline Refactoring Exercises
 
 Learn how to express algorithms using collection pipelines instead of loops.
 
